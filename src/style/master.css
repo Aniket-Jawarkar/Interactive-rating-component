@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Rubik:ital,wght@0,300;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121417;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* rating input box */
+main #review {
+  color: #FC7614;
+  border-radius: 25px;
+  background-color: #323a42;
+  width: 200px;
+  font-size: 10px;
+  margin: 2px;
+}
+
+/* THANK YOU STATE */
+main #thankyou {
+  display: flex;               /* enable flex layout */
+  flex-direction: column;      /* stack children vertically */
+  align-items: center;         /* center them horizontally */
+  text-align: center;          /* center the text under the image */
+  gap: 7px;                   /* spacing between image / heading / paragraph */
+  padding: 2rem;
+}
+
+/* constrain & margin the illustration */
+main #thankyou img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+main section {
+  background-color: #252d37;
+  color: #fff;
+  padding: 2%;
+  border-radius: 25px;
+  width: 300px;
+}
+
+main section #submit {
+  width: 100%;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #FC7614;
+  color: #fff;
+  border: none;
+  padding: 1%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+main section #submit:hover {
+  background-color: #fff;
+  color: #FC7614;
+}
+
+main section #reviews {
+  display: flex;
+  margin: 2% 0;
+}
+main section #reviews button {
+  border: none;
+  background-color: #323a42;
+  margin: 1%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 2%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+main section #reviews button:hover,
+main section #reviews button:focus {
+  background-color: #FC7614;
+  color: #fff;
+}
+
+main section p,
+main section button {
+  font-size: 15px;
+  color: #959eac;
+}
+
+main section #icon {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+  transition: box-shadow 0.3s;
+}
+main section #icon:hover {
+  box-shadow: 0 0 30px rgba(255, 165, 0, 1);
+}
